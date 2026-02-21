@@ -8,7 +8,7 @@ export default function CartSidebarContainer() {
 
     const handleSendWhatsApp = () => {
         // Replace with the actual business number
-        const WHATSAPP_NUMBER = "916302903019"
+        const WHATSAPP_NUMBER = "918367357874"
 
         // Calculate totals for summary
         const totalServices = cart.length

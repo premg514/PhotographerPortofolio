@@ -43,7 +43,7 @@ export default function Header() {
             </div>
             <span className={`text-2xl font-display font-bold transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'
               }`}>
-              Santhosh <span className={isScrolled ? 'text-amber-600' : 'text-amber-200'}>Photography</span>
+              Santosh <span className={isScrolled ? 'text-amber-600' : 'text-amber-200'}>Photography</span>
             </span>
           </Link>
 

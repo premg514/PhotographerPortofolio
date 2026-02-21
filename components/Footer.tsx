@@ -35,23 +35,23 @@ export default function Footer() {
               <div className="p-2 bg-amber-100/50 rounded-xl">
                 <Camera className="w-6 h-6 text-amber-600" />
               </div>
-              <span className="text-2xl font-display font-bold text-slate-900">Santhosh <span className="text-amber-600">Photography</span></span>
+              <span className="text-2xl font-display font-bold text-slate-900">Santosh <span className="text-amber-600">Photography</span></span>
             </Link>
             <p className="text-slate-500 mb-6 leading-relaxed text-sm font-light">
-              Capturing moments, creating memories. Professional photography services for all your special occasions, crafted with passion and precision.
+              Capturing moments, creating memories. Professional photography services for all your special occasions, BHIMAVARAM based, crafted with passion and precision.
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3 text-slate-500 hover:text-amber-600 transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>+91 98765 43210</span>
+                <span>+91 83673 57874</span>
               </div>
               <div className="flex items-center gap-3 text-slate-500 hover:text-amber-600 transition-colors">
                 <Mail className="w-4 h-4" />
-                <span>contact@santhoshphotography.com</span>
+                <span>santoshphotography.7874@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-slate-500 hover:text-amber-600 transition-colors">
                 <MapPin className="w-4 h-4" />
-                <span>Hyderabad, Telangana</span>
+                <span>Bhimavaram, India</span>
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-400 text-sm">
-            © {currentYear} Santhosh Photography. All rights reserved.
+            © {currentYear} Santosh Photography. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a

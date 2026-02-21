@@ -2,6 +2,12 @@ import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import { CartProvider } from '@/context/CartContext'
 import CartSidebarContainer from '@/components/CartSidebarContainer'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Santosh Photography',
+  description: 'Capturing moments, creating memories. Professional photography services for all your special occasions.',
+}
 
 // Load Inter for body text
 const inter = Inter({

@@ -23,7 +23,7 @@ export const services: Service[] = [
       "Candid Photos",
       "Cinematic Video",
       "Drone",
-      "Album Cover"
+      "Audience Camera"
     ]
   },
   {
@@ -36,7 +36,8 @@ export const services: Service[] = [
       "Traditional Video",
       "Candid Photos",
       "Cinematic Video",
-      "Drone"
+      "Drone",
+      "Audience Camera"
     ]
   },
   {
@@ -49,7 +50,8 @@ export const services: Service[] = [
       "Traditional Video",
       "Candid Photos",
       "Cinematic Video",
-      "Drone"
+      "Drone",
+      "Audience Camera"
     ]
   },
   {
@@ -63,7 +65,7 @@ export const services: Service[] = [
       "Candid Photos",
       "Cinematic Video",
       "Drone",
-      "Album Cover"
+      "Audience Camera"
     ]
   },
   {
@@ -111,7 +113,7 @@ export const services: Service[] = [
       "Candid Photos",
       "Cinematic Video",
       "Drone",
-      "Album"
+      "Audience Camera"
     ]
   }
 ]

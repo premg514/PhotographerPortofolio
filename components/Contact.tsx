@@ -36,13 +36,13 @@ export default function Contact() {
   }
 
   const contactInfo = [
-    { icon: Phone, label: 'Phone', value: '+91 98765 43210' },
-    { icon: Mail, label: 'Email', value: 'hello@santhoshphotography.com' },
-    { icon: MapPin, label: 'Location', value: 'Hyderabad, Telangana, India' },
+    { icon: Phone, label: 'Phone', value: '+91 83673 57874' },
+    { icon: Mail, label: 'Email', value: 'santoshphotography.7874@gmail.com' },
+    { icon: MapPin, label: 'Location', value: 'Bhimavaram, India' },
   ]
 
   const socialLinks = [
-    { icon: Instagram, url: '#', label: 'Instagram' },
+    { icon: Instagram, url: 'https://www.instagram.com/santosh_photography_offical?igsh=MTNjaXJqMWFlb2hyOQ%3D%3D&utm_source=qr', label: 'Instagram' },
     { icon: Facebook, url: '#', label: 'Facebook' },
     { icon: Youtube, url: '#', label: 'Youtube' },
   ]
@@ -160,7 +160,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-amber-400 focus:bg-white focus:outline-none transition-all duration-300 placeholder-slate-400 font-medium"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 83673 57874"
                     suppressHydrationWarning
                   />
                 </div>
