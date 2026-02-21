@@ -13,6 +13,8 @@ import {
 import { services, Service } from "@/lib/services";
 import { useCart } from "@/context/CartContext";
 
+import Image from "next/image";
+
 // Premium Gold & Slate Palette
 const serviceIcons: { [key: string]: any } = {
   "baby-shower": Baby,
@@ -118,10 +120,11 @@ export default function Services() {
                 {/* Image Section */}
                 <div className="relative h-64 overflow-hidden">
                   <div className="absolute inset-0 bg-slate-200 animate-pulse"></div>
-                  <img
+                  <Image
                     src={imageUrl}
                     alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-300"></div>
 

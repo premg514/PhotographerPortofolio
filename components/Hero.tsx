@@ -2,6 +2,7 @@
 
 import { ArrowRight, Sparkles, Star, Award, Camera } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -94,9 +95,12 @@ export default function Hero() {
 
             <div className="relative w-full h-full animate-float-3d flex items-center justify-center z-10">
               {/* Camera Image */}
-              <img
+              <Image
                 src="https://res.cloudinary.com/deeejohfw/image/upload/v1771293744/camera_3d_render_png_1771217651128-Photoroom_vh3hpl.png"
                 alt="Premium Camera"
+                width={800}
+                height={800}
+                priority
                 className="relative w-auto h-full max-h-[90%] object-contain drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transform hover:scale-105 transition-transform duration-700 ease-out"
               />
 

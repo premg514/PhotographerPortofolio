@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Camera, ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 type Category = 'all' | 'weddings' | 'babies' | 'birthdays' | 'outdoor'
 
@@ -120,9 +120,15 @@ export default function Portfolio() {
               className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 animate-fade-in cursor-pointer"
               style={{ animationDelay: `${0.05 * index}s` }}
             >
-              {/* Placeholder Image */}
-              <div className="absolute inset-0 bg-slate-200 flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
-                <Camera className="w-12 h-12 text-slate-300" />
+              {/* Optimized Image */}
+              <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-700">
+                <Image
+                  src={item.imageUrl}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
               </div>
 
               {/* Elegant Overlay */}
