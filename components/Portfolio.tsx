@@ -6,85 +6,40 @@ import Image from 'next/image'
 type Category = 'all' | 'weddings' | 'babies' | 'birthdays' | 'outdoor'
 
 export default function Portfolio() {
-  const [activeCategory, setActiveCategory] = useState<Category>('all')
-
-  const categories = [
-    { id: 'all' as Category, label: 'All' },
-    { id: 'weddings' as Category, label: 'Weddings' },
-    { id: 'babies' as Category, label: 'Babies' },
-    { id: 'birthdays' as Category, label: 'Birthdays' },
-    { id: 'outdoor' as Category, label: 'Outdoor' },
-  ]
-
-  // Gallery items with Unsplash images
+  // Gallery items with Cloudinary images
   const galleryItems = [
     {
       id: 1,
       category: 'weddings',
-      title: 'Royal Wedding Ceremony',
-      imageUrl: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80'
+      title: 'Wedding Moments',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026172/2_2.jpg_1_ftxojo.jpg'
     },
     {
       id: 2,
-      category: 'babies',
-      title: 'Newborn Session',
-      imageUrl: 'https://images.unsplash.com/photo-1519689680058-324335c77eba?auto=format&fit=crop&q=80'
+      category: 'outdoor',
+      title: 'Outdoor Session',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026176/IMG_3013_ggvgga.jpg'
     },
     {
       id: 3,
-      category: 'birthdays',
-      title: 'First Birthday Celebration',
-      imageUrl: 'https://images.unsplash.com/photo-1530103862676-de3c9a59af57?auto=format&fit=crop&q=80'
+      category: 'weddings',
+      title: 'Event Photography',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026601/3_1.jpg_1_nycmxj.jpg'
     },
     {
       id: 4,
       category: 'outdoor',
-      title: 'Sunset Couple Shoot',
-      imageUrl: 'https://images.unsplash.com/photo-1470252649378-27ef86442da5?auto=format&fit=crop&q=80'
-    },
-    {
-      id: 5,
-      category: 'weddings',
-      title: 'Grand Reception',
-      imageUrl: 'https://images.unsplash.com/photo-1511285560982-1351cdeb9821?auto=format&fit=crop&q=80'
-    },
-    {
-      id: 6,
-      category: 'babies',
-      title: 'Toddler Portraits',
-      imageUrl: 'https://images.unsplash.com/photo-1510156063462-878051778c1f?auto=format&fit=crop&q=80'
-    },
-    {
-      id: 7,
-      category: 'birthdays',
-      title: 'Cake Smash Fun',
-      imageUrl: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&q=80'
-    },
-    {
-      id: 8,
-      category: 'outdoor',
-      title: 'Traditional Half Saree',
-      imageUrl: 'https://images.unsplash.com/photo-1605218427368-35b8095bc354?auto=format&fit=crop&q=80'
-    },
-    {
-      id: 9,
-      category: 'weddings',
-      title: 'Bride & Groom Portrait',
-      imageUrl: 'https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&q=80'
+      title: 'Scenic Portrait',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026659/1_2.jpg_1_ytl8xc.jpg'
     },
   ]
-
-  const filteredItems =
-    activeCategory === 'all'
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === activeCategory)
 
   return (
     <section id="portfolio" className="py-24 bg-slate-50 relative">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
 
       <div className="container-custom relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-24 animate-fade-in">
           <div className="inline-block px-4 py-2 bg-white border border-slate-200 rounded-full mb-4 shadow-sm">
             <span className="text-xs font-bold text-amber-600 tracking-widest uppercase">Our Portfolio</span>
           </div>
@@ -96,29 +51,13 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategory(category.id)}
-              className={`px-6 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 border ${activeCategory === category.id
-                ? 'bg-slate-900 text-white border-slate-900 shadow-md transform scale-105'
-                : 'bg-white text-slate-600 border-slate-200 hover:border-amber-300 hover:text-amber-600'
-                }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
-
-        {/* Gallery Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredItems.map((item, index) => (
+        {/* Gallery Grid - 2 columns for 4 items */}
+        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+          {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 animate-fade-in cursor-pointer"
-              style={{ animationDelay: `${0.05 * index}s` }}
+              className="group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 animate-fade-in cursor-pointer"
+              style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Optimized Image */}
               <div className="absolute inset-0 bg-slate-200 group-hover:scale-105 transition-transform duration-700">
@@ -127,17 +66,17 @@ export default function Portfolio() {
                   alt={item.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                 />
               </div>
 
               {/* Elegant Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <div className="absolute bottom-0 left-0 right-0 p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                   <span className="inline-block px-3 py-1 bg-amber-500 text-white text-[10px] uppercase tracking-widest font-bold rounded-full mb-3">
                     {item.category}
                   </span>
-                  <h3 className="text-2xl font-display font-bold text-white mb-1">{item.title}</h3>
+                  <h3 className="text-3xl font-display font-bold text-white mb-1">{item.title}</h3>
                 </div>
               </div>
             </div>
@@ -145,8 +84,8 @@ export default function Portfolio() {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-16">
-          <a href="#contact" className="px-8 py-3 bg-white text-slate-800 font-semibold rounded-full border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition-all duration-300 shadow-sm hover:shadow-md inline-block">
+        <div className="text-center mt-20">
+          <a href="#contact" className="px-10 py-4 bg-white text-slate-800 font-semibold rounded-full border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition-all duration-300 shadow-sm hover:shadow-md inline-block">
             View Full Portfolio
           </a>
         </div>

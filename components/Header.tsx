@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, Camera } from 'lucide-react'
 
 export default function Header() {
@@ -33,18 +34,20 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 group animate-fade-in">
-            <div className={`p-2 rounded-xl transition-all duration-300 ${isScrolled
+          <Link href="/" className="flex items-center group animate-fade-in">
+            <div className={`p-1 rounded-xl transition-all duration-300 ${isScrolled
               ? 'bg-amber-100/50'
               : 'bg-white/10 backdrop-blur-sm'
               }`}>
-              <Camera className={`w-6 h-6 transition-colors ${isScrolled ? 'text-amber-600' : 'text-white'
-                }`} />
+              <div className="relative w-12 h-12 overflow-hidden rounded-lg">
+                <Image
+                  src="https://res.cloudinary.com/deeejohfw/image/upload/v1772027200/458465116_1047268646835539_4920439999036437754_n_lkirfv.jpg"
+                  alt="Logo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
-            <span className={`text-2xl font-display font-bold transition-colors ${isScrolled ? 'text-slate-900' : 'text-white'
-              }`}>
-              Santosh <span className={isScrolled ? 'text-amber-600' : 'text-amber-200'}>Photography</span>
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,7 +1,8 @@
 'use client'
 
-import { Camera, Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -31,11 +32,17 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link href="/" className="flex items-center space-x-2 mb-6 group">
-              <div className="p-2 bg-amber-100/50 rounded-xl">
-                <Camera className="w-6 h-6 text-amber-600" />
+            <Link href="/" className="flex items-center mb-6 group">
+              <div className="p-1 bg-amber-100/50 rounded-xl overflow-hidden">
+                <div className="relative w-12 h-12 overflow-hidden rounded-lg">
+                  <Image
+                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772027200/458465116_1047268646835539_4920439999036437754_n_lkirfv.jpg"
+                    alt="Logo"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <span className="text-2xl font-display font-bold text-slate-900">Santosh <span className="text-amber-600">Photography</span></span>
             </Link>
             <p className="text-slate-500 mb-6 leading-relaxed text-sm font-light">
               Capturing moments, creating memories. Professional photography services for all your special occasions, BHIMAVARAM based, crafted with passion and precision.
