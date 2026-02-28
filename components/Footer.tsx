@@ -3,18 +3,16 @@
 import { Mail, Phone, MapPin, Instagram, Youtube } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { services } from '@/lib/services'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    services: [
-      { label: 'Baby Shower', href: '#services' },
-      { label: 'Cradle Ceremony', href: '#services' },
-      { label: 'Wedding Photography', href: '#services' },
-      { label: 'House Warming', href: '#services' },
-      { label: 'Fashion Shoot', href: '#services' },
-    ],
+    services: services.map(service => ({
+      label: service.title,
+      href: `/services/${service.slug}`
+    })),
     quickLinks: [
       { label: 'Portfolio', href: '#portfolio' },
       { label: 'Services', href: '#services' },

@@ -18,7 +18,7 @@ import { useCart } from "@/context/CartContext";
 import { CartItem } from "@/context/CartContext";
 
 // Icons mapping
-import { Baby, Cake, Mountain, Heart } from "lucide-react";
+import { Baby, Cake, Mountain, Heart, Home, User, Music, Scissors } from "lucide-react";
 
 const serviceIcons: { [key: string]: any } = {
     "baby-shower": Baby,
@@ -26,14 +26,24 @@ const serviceIcons: { [key: string]: any } = {
     birthday: Cake,
     "half-saree": Mountain,
     wedding: Heart,
+    "house-warming": Home,
+    "celebrities-shoots": User,
+    "song-shoots": Music,
+    fashion: Scissors,
+    engagement: Heart,
 };
 
 const serviceImages: { [key: string]: string } = {
-    "baby-shower": "https://res.cloudinary.com/deeejohfw/image/upload/v1771297759/photo-1519689680058-324335c77eba_lzybhp.avif",
-    "cradle-ceremony": "https://res.cloudinary.com/deeejohfw/image/upload/v1771297722/service_cradle_ceremony_1771296977840_annia8.jpg",
-    birthday: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297721/service_birthday_party_1771296996314_zz8oo1.jpg",
-    "half-saree": "https://res.cloudinary.com/deeejohfw/image/upload/v1771299945/Gemini_Generated_Image_h447yah447yah447_e0mqqg.png",
-    wedding: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297722/service_wedding_1771297036682_i3ayhy.jpg",
+    "baby-shower": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272344/baby_shower.jpg_1_ax0fp8.jpg",
+    "cradle-ceremony": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/cradile.jpg_iauy3z.jpg",
+    birthday: "https://res.cloudinary.com/deeejohfw/image/upload/v1772272469/birthday.jpg_adnx1l.jpg",
+    "half-saree": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272528/hafsare.jpg_nirtqp.jpg",
+    wedding: "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/wedding.jpg_kfhoez.jpg",
+    "house-warming": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272634/house.jpg_yydirv.jpg",
+    "celebrities-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271931/cele.jpg_adrj8e.jpg",
+    "song-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/song.jpg_w9qe0l.jpg",
+    fashion: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800",
+    engagement: "https://res.cloudinary.com/deeejohfw/image/upload/v1772271934/ENG.jpg_rwqrpn.jpg",
 };
 
 export default function ServicePage({

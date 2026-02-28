@@ -30,6 +30,7 @@ const serviceIcons: { [key: string]: any } = {
   "celebrities-shoots": User,
   "song-shoots": Music,
   fashion: Scissors,
+  engagement: Heart,
 };
 
 // Image mapping for services
@@ -43,6 +44,7 @@ const serviceImages: { [key: string]: string } = {
   "celebrities-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271931/cele.jpg_adrj8e.jpg",
   "song-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/song.jpg_w9qe0l.jpg",
   fashion: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800",
+  engagement: "https://res.cloudinary.com/deeejohfw/image/upload/v1772271934/ENG.jpg_rwqrpn.jpg",
 };
 
 export default function Services() {
@@ -162,10 +164,12 @@ export default function Services() {
 
                     {/* Features Preview */}
                     <div className="flex flex-col gap-2.5">
-                      <div className="flex items-center gap-3 text-sm text-slate-600">
-                        <div className="w-1.5 h-1.5 rounded-full bg-amber-400"></div>
-                        <span>{service.events?.length || 0} Special Events</span>
-                      </div>
+                      {(service.events?.length || (service.religions ? service.religions[0].events.length : 0)) > 0 && (
+                        <div className="flex items-center gap-3 text-sm text-slate-600">
+                          <div className="w-1.5 h-1.5 rounded-full bg-amber-400"></div>
+                          <span>{service.events?.length || (service.religions ? `${service.religions[0].events.length}+` : 0)} Special Events</span>
+                        </div>
+                      )}
                       <div className="flex items-center gap-3 text-sm text-slate-600">
                         <div className="w-1.5 h-1.5 rounded-full bg-amber-400"></div>
                         <span>{service.mediaTypes.length} Media Options</span>

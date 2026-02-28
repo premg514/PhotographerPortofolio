@@ -158,6 +158,7 @@ export const services: Service[] = [
     events: ["Main Shoot", "BTS Shoot"],
     mediaTypes: [
       "Traditional Photos",
+      "Candid Photos",
       "Cinematic Video",
       "Drone",
       "BTS Video"
@@ -173,6 +174,20 @@ export const services: Service[] = [
       "Candid Photos",
       "Cinematic Video",
       "Fashion Film"
+    ]
+  },
+  {
+    slug: "engagement",
+    title: "Engagement",
+    description: "Capture the beautiful journey of your love story with cinematic engagement coverage.",
+    events: ["Event"],
+    mediaTypes: [
+      "Traditional Photos",
+      "Traditional Video",
+      "Candid Photos",
+      "Cinematic Video",
+      "Drone",
+      "Audience Camera"
     ]
   }
 ]
