@@ -21,6 +21,7 @@ export default function Header() {
     { href: '#home', label: 'Home' },
     { href: '#services', label: 'Services' },
     { href: '#portfolio', label: 'Portfolio' },
+    { href: '#cinematography', label: 'Cinematography' },
     { href: '#contact', label: 'Contact' },
   ]
 
@@ -37,7 +38,7 @@ export default function Header() {
           <Link href="/" className="flex items-center group animate-fade-in transition-all duration-300">
             <div className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <Image
-                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772254269/Screenshot_2026-02-28_101840_auxcdi.png"
+                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772255411/Screenshot_2026-02-28_101840_xns2kn.png"
                 alt="Santosh Photography Logo"
                 width={200}
                 height={50}
