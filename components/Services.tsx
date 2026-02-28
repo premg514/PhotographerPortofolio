@@ -34,14 +34,14 @@ const serviceIcons: { [key: string]: any } = {
 
 // Image mapping for services
 const serviceImages: { [key: string]: string } = {
-  "baby-shower": "https://res.cloudinary.com/deeejohfw/image/upload/v1771297759/photo-1519689680058-324335c77eba_lzybhp.avif",
-  "cradle-ceremony": "https://res.cloudinary.com/deeejohfw/image/upload/v1771297722/service_cradle_ceremony_1771296977840_annia8.jpg",
-  birthday: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297721/service_birthday_party_1771296996314_zz8oo1.jpg",
-  "half-saree": "https://res.cloudinary.com/deeejohfw/image/upload/v1771299945/Gemini_Generated_Image_h447yah447yah447_e0mqqg.png",
-  wedding: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297722/service_wedding_1771297036682_i3ayhy.jpg",
-  "house-warming": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
-  "celebrities-shoots": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
-  "song-shoots": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=800",
+  "baby-shower": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272344/baby_shower.jpg_1_ax0fp8.jpg",
+  "cradle-ceremony": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/cradile.jpg_iauy3z.jpg",
+  birthday: "https://res.cloudinary.com/deeejohfw/image/upload/v1772272469/birthday.jpg_adnx1l.jpg",
+  "half-saree": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272528/hafsare.jpg_nirtqp.jpg",
+  wedding: "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/wedding.jpg_kfhoez.jpg",
+  "house-warming": "https://res.cloudinary.com/deeejohfw/image/upload/v1772272634/house.jpg_yydirv.jpg",
+  "celebrities-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271931/cele.jpg_adrj8e.jpg",
+  "song-shoots": "https://res.cloudinary.com/deeejohfw/image/upload/v1772271912/song.jpg_w9qe0l.jpg",
   fashion: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800",
 };
 
@@ -130,7 +130,7 @@ export default function Services() {
                 onClick={() => handleServiceClick(service)}
               >
                 {/* Image Section */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-80 overflow-hidden">
                   <div className="absolute inset-0 bg-slate-200 animate-pulse"></div>
                   <Image
                     src={imageUrl}

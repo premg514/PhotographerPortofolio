@@ -36,7 +36,7 @@ export default function Footer() {
               <div className="p-1 rounded-xl transition-all duration-300">
                 <div className="relative h-10 w-32 overflow-hidden">
                   <Image
-                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772254269/Screenshot_2026-02-28_101840_auxcdi.png"
+                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772271906/logo.jpg_duilqh.jpg"
                     alt="Santosh Photography Logo"
                     fill
                     className="object-contain object-left"

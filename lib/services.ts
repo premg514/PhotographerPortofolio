@@ -91,8 +91,12 @@ export const services: Service[] = [
         slug: "christian",
         title: "Christian Wedding",
         events: [
-          "Bride Preparation",
-          "Groom Preparation",
+          "Groom Making",
+          "Bride Making",
+          "Groom Haldi",
+          "Bride Haldi",
+          "Mehendi",
+          "Sangeet",
           "Wedding Ceremony",
           "Reception"
         ]
@@ -101,8 +105,13 @@ export const services: Service[] = [
         slug: "muslim",
         title: "Muslim Wedding",
         events: [
-          "Nikah",
+          "Groom Making",
+          "Bride Making",
+          "Groom Haldi",
+          "Bride Haldi",
           "Mehendi",
+          "Sangeet",
+          "Wedding Ceremony",
           "Reception"
         ]
       }

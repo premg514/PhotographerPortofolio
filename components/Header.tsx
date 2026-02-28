@@ -38,11 +38,11 @@ export default function Header() {
           <Link href="/" className="flex items-center group animate-fade-in transition-all duration-300">
             <div className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
               <Image
-                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772255411/Screenshot_2026-02-28_101840_xns2kn.png"
+                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772271906/logo.jpg_duilqh.jpg"
                 alt="Santosh Photography Logo"
-                width={200}
-                height={50}
-                className="h-8 md:h-10 w-auto object-contain block"
+                width={320}
+                height={120}
+                className="h-14 md:h-20 w-auto object-contain block"
               />
             </div>
           </Link>
