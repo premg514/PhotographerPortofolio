@@ -12,25 +12,43 @@ export default function Portfolio() {
       id: 1,
       category: 'weddings',
       title: 'Wedding Moments',
-      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026172/2_2.jpg_1_ftxojo.jpg'
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772285001/50.jpg_zfntbm.jpg'
     },
     {
       id: 2,
       category: 'outdoor',
       title: 'Outdoor Session',
-      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026176/IMG_3013_ggvgga.jpg'
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772285001/3.jpg_1_bfa3jy.jpg'
     },
     {
       id: 3,
       category: 'weddings',
       title: 'Event Photography',
-      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026601/3_1.jpg_1_nycmxj.jpg'
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772284794/0001.jpg_esajgg.jpg'
     },
     {
       id: 4,
       category: 'outdoor',
       title: 'Scenic Portrait',
-      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026659/1_2.jpg_1_ytl8xc.jpg'
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772284793/sp25.jpg_myuiry.jpg'
+    },
+    {
+      id: 5,
+      category: 'weddings',
+      title: 'Ceremony Bliss',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772284766/WhatsApp_Image_2026-02-28_at_6.31.42_PM_cd7lga.jpg'
+    },
+    {
+      id: 6,
+      category: 'outdoor',
+      title: 'Nature Portrait',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772284766/2.jpg_zx7rgt.jpg'
+    },
+    {
+      id: 7,
+      category: 'weddings',
+      title: 'Timeless Connection',
+      imageUrl: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772026172/2_2.jpg_1_ftxojo.jpg'
     },
   ]
 
@@ -51,12 +69,12 @@ export default function Portfolio() {
           </p>
         </div>
 
-        {/* Gallery Grid - 2 columns for 4 items */}
-        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+        {/* Gallery Grid - 3 columns for 7 items */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
           {galleryItems.map((item, index) => (
             <div
               key={item.id}
-              className="group relative aspect-[4/5] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 animate-fade-in cursor-pointer"
+              className="group relative aspect-[3/2] rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 animate-fade-in cursor-pointer"
               style={{ animationDelay: `${0.1 * index}s` }}
             >
               {/* Optimized Image */}
@@ -66,7 +84,7 @@ export default function Portfolio() {
                   alt={item.title}
                   fill
                   className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
 
@@ -76,7 +94,7 @@ export default function Portfolio() {
                   <span className="inline-block px-3 py-1 bg-amber-500 text-white text-[10px] uppercase tracking-widest font-bold rounded-full mb-3">
                     {item.category}
                   </span>
-                  <h3 className="text-3xl font-display font-bold text-white mb-1">{item.title}</h3>
+                  <h3 className="text-2xl font-display font-bold text-white mb-1">{item.title}</h3>
                 </div>
               </div>
             </div>
