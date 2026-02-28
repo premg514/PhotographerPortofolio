@@ -33,13 +33,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center mb-6 group">
-              <div className="p-1 bg-amber-100/50 rounded-xl overflow-hidden">
-                <div className="relative w-12 h-12 overflow-hidden rounded-lg">
+              <div className="p-1 rounded-xl transition-all duration-300">
+                <div className="relative h-10 w-32 overflow-hidden">
                   <Image
                     src="https://res.cloudinary.com/deeejohfw/image/upload/v1772254269/Screenshot_2026-02-28_101840_auxcdi.png"
                     alt="Santosh Photography Logo"
                     fill
-                    className="object-contain"
+                    className="object-contain object-left"
                   />
                 </div>
               </div>

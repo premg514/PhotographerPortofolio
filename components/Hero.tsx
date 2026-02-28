@@ -89,27 +89,73 @@ export default function Hero() {
           </div>
 
           {/* Image Column */}
-          <div className="relative w-full flex justify-center lg:justify-end perspective-1000 h-[350px] md:h-[500px] lg:h-[650px]">
-            {/* Decorative Circle Behind */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-white/40 rounded-full blur-3xl border border-white/50 shadow-2xl shadow-indigo-100/20"></div>
+          <div className="relative w-full flex justify-center lg:justify-end perspective-1000">
+            {/* Soft Ambient Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] h-[140%] bg-amber-100/30 rounded-full blur-[100px] -z-10"></div>
 
-            <div className="relative w-full h-full animate-float-3d flex items-center justify-center z-10">
-              {/* Logo GIF */}
-              <Image
-                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772251631/santoshphotographylogo-ezgif.com-video-to-gif-converter_fitrhw.gif"
-                alt="Santosh Photography Logo"
-                width={700}
-                height={700}
-                priority
-                className="relative w-auto h-full max-h-[85%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-transform duration-700 ease-out hover:scale-105"
-              />
+            <div className="relative w-full max-w-[620px] aspect-[4/3] animate-float-3d z-10">
+              {/* Professional Camera Frame Container */}
+              <div className="absolute inset-0 bg-white p-3 md:p-5 rounded-[2.5rem] md:rounded-[4rem] shadow-[0_32px_64px_-16px_rgba(0,0,0,0.15)] border border-slate-100 overflow-hidden group">
+                {/* Inner Content Case (Viewfinder) */}
+                <div className="relative w-full h-full bg-slate-950 rounded-[1.8rem] md:rounded-[3rem] overflow-hidden flex items-center justify-center">
+                  {/* Subtle Grid Pattern Overlay */}
+                  <div className="absolute inset-0 opacity-[0.08] bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] z-10 pointer-events-none"></div>
 
+                  {/* Viewfinder Corners (L-Shapes) */}
+                  <div className="absolute top-6 left-6 w-8 h-8 border-t-2 border-l-2 border-white/40 z-20 pointer-events-none rounded-tl-sm"></div>
+                  <div className="absolute top-6 right-6 w-8 h-8 border-t-2 border-r-2 border-white/40 z-20 pointer-events-none rounded-tr-sm"></div>
+                  <div className="absolute bottom-6 left-6 w-8 h-8 border-b-2 border-l-2 border-white/40 z-20 pointer-events-none rounded-bl-sm"></div>
+                  <div className="absolute bottom-6 right-6 w-8 h-8 border-b-2 border-r-2 border-white/40 z-20 pointer-events-none rounded-br-sm"></div>
 
-              {/* Decorative Sparks */}
-              <Sparkles className="absolute top-1/4 -left-4 w-6 h-6 text-amber-400 animate-pulse" style={{ animationDuration: '2s' }} />
-              <Sparkles className="absolute top-0 right-12 w-4 h-4 text-yellow-400 animate-pulse" style={{ animationDuration: '3s', animationDelay: '0.5s' }} />
-              <Sparkles className="absolute bottom-1/3 -right-6 w-5 h-5 text-amber-300 animate-pulse" style={{ animationDuration: '1.5s', animationDelay: '1s' }} />
-              <Sparkles className="absolute top-1/2 left-10 w-3 h-3 text-yellow-200 animate-pulse opacity-70" style={{ animationDuration: '2.5s', animationDelay: '0.2s' }} />
+                  {/* Focus Marker (Center Crosshair) */}
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 z-20 pointer-events-none opacity-30">
+                    <div className="absolute top-1/2 left-0 w-full h-[1px] bg-white"></div>
+                    <div className="absolute top-0 left-1/2 w-[1px] h-full bg-white"></div>
+                  </div>
+
+                  {/* Logo GIF */}
+                  <Image
+                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772251631/santoshphotographylogo-ezgif.com-video-to-gif-converter_fitrhw.gif"
+                    alt="Santosh Photography Logo"
+                    fill
+                    priority
+                    className="object-contain p-6 md:p-12 transition-all duration-700 md:group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 620px"
+                  />
+
+                  {/* Camera UI Elements */}
+                  <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black/60 to-transparent flex items-start justify-between px-8 pt-6 z-20">
+                    <div className="flex items-center gap-2">
+                      <div className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse"></div>
+                      <span className="text-[10px] font-bold text-white tracking-[0.2em] uppercase">REC</span>
+                    </div>
+                    <div className="flex items-center gap-4 text-white/60 text-[9px] font-mono">
+                      <span>4K 60FPS</span>
+                      <span>ISO 200</span>
+                    </div>
+                  </div>
+
+                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-between px-8 pb-6 z-20">
+                    <div className="text-white/60 text-[9px] font-mono flex items-center gap-3">
+                      <span>128GB</span>
+                      <div className="w-6 h-3 border border-white/40 rounded-[2px] p-[1px]">
+                        <div className="h-full w-3/4 bg-white/60"></div>
+                      </div>
+                    </div>
+                    <span className="text-white font-mono text-[9px]">00:24:15:08</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Decorative "Premium" Badge */}
+              <div className="absolute -top-3 -right-3 md:-top-5 md:-right-5 bg-amber-500 text-white px-4 py-2 md:px-7 md:py-3.5 rounded-2xl shadow-xl shadow-amber-500/30 font-display font-black text-xs md:text-sm -rotate-6 z-30 animate-fade-in hover:rotate-0 transition-all duration-300 cursor-default">
+                CINEMATIC
+              </div>
+
+              {/* Floating Icons */}
+              <div className="absolute -bottom-10 -left-10 p-5 bg-white rounded-3xl shadow-xl border border-slate-50 animate-bounce transition-transform hover:scale-110" style={{ animationDuration: '3s' }}>
+                <Camera className="w-8 h-8 text-amber-500" />
+              </div>
             </div>
           </div>
         </div>
