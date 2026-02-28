@@ -94,30 +94,15 @@ export default function Hero() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-white/40 rounded-full blur-3xl border border-white/50 shadow-2xl shadow-indigo-100/20"></div>
 
             <div className="relative w-full h-full animate-float-3d flex items-center justify-center z-10">
-              <div className="relative group max-w-[500px] w-full aspect-square flex items-center justify-center">
-                {/* Dynamic RGB Glow Background */}
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-500 via-indigo-600 to-emerald-500 rounded-full blur-[80px] opacity-40 animate-spin-slow group-hover:opacity-60 transition-opacity duration-1000"></div>
-                <div className="absolute inset-4 bg-gradient-to-tr from-amber-400 via-purple-500 to-cyan-500 rounded-full blur-[40px] opacity-30 animate-pulse"></div>
-
-                {/* Darkened Container for GIF Blending */}
-                <div className="relative z-10 w-full h-full bg-slate-900/90 backdrop-blur-xl rounded-[3rem] p-8 md:p-12 border border-white/10 shadow-2xl flex items-center justify-center overflow-hidden">
-                  <Image
-                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772252580/santoshphotographylogo-ezgif.com-crop_anybpa.gif"
-                    alt="Santosh Photography Logo"
-                    width={800}
-                    height={800}
-                    priority
-                    className="w-full h-auto mix-blend-screen scale-125 transform group-hover:scale-[1.3] transition-transform duration-1000 ease-out"
-                  />
-
-                  {/* Subtle Overlays */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent pointer-events-none"></div>
-                </div>
-
-                {/* Additional Decorative RGB Sparks */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-amber-400/20 rounded-full blur-2xl animate-pulse"></div>
-                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-indigo-500/20 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-              </div>
+              {/* Logo GIF */}
+              <Image
+                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772251631/santoshphotographylogo-ezgif.com-video-to-gif-converter_fitrhw.gif"
+                alt="Santosh Photography Logo"
+                width={700}
+                height={700}
+                priority
+                className="relative w-auto h-full max-h-[85%] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)] transition-transform duration-700 ease-out hover:scale-105"
+              />
 
 
               {/* Decorative Sparks */}
@@ -153,15 +138,6 @@ export default function Hero() {
         @keyframes scroll-line {
             0% { transform: translateY(-100%); }
             100% { transform: translateY(100%); }
-        }
-
-        @keyframes spin-slow {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-
-        .animate-spin-slow {
-          animation: spin-slow 12s linear infinite;
         }
 
         .animate-float-3d {

@@ -1,6 +1,6 @@
 'use client'
 
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, Instagram, Youtube } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -11,9 +11,9 @@ export default function Footer() {
     services: [
       { label: 'Baby Shower', href: '#services' },
       { label: 'Cradle Ceremony', href: '#services' },
-      { label: 'Birthday Shoot', href: '#services' },
-      { label: 'Half Saree Function', href: '#services' },
       { label: 'Wedding Photography', href: '#services' },
+      { label: 'House Warming', href: '#services' },
+      { label: 'Fashion Shoot', href: '#services' },
     ],
     quickLinks: [
       { label: 'Portfolio', href: '#portfolio' },
@@ -36,10 +36,10 @@ export default function Footer() {
               <div className="p-1 bg-amber-100/50 rounded-xl overflow-hidden">
                 <div className="relative w-12 h-12 overflow-hidden rounded-lg">
                   <Image
-                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772027200/458465116_1047268646835539_4920439999036437754_n_lkirfv.jpg"
-                    alt="Logo"
+                    src="https://res.cloudinary.com/deeejohfw/image/upload/v1772254269/Screenshot_2026-02-28_101840_auxcdi.png"
+                    alt="Santosh Photography Logo"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               </div>
@@ -60,6 +60,25 @@ export default function Footer() {
                 <MapPin className="w-4 h-4" />
                 <span>Bhimavaram, India</span>
               </div>
+            </div>
+
+            <div className="flex gap-4 mt-8">
+              <a
+                href="https://www.instagram.com/santosh_photography_offical?igsh=MTNjaXJqMWFlb2hyOQ%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-400 hover:text-amber-500 hover:border-amber-200 transition-all duration-300 shadow-sm"
+              >
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a
+                href="https://youtube.com/@santosh_photography?si=MhGtwc-tXFbjE7UP"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-white border border-slate-200 rounded-xl flex items-center justify-center text-slate-400 hover:text-amber-500 hover:border-amber-200 transition-all duration-300 shadow-sm"
+              >
+                <Youtube className="w-5 h-5" />
+              </a>
             </div>
           </div>
 

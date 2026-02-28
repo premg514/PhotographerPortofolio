@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Send, Instagram, Facebook, Youtube } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Instagram, Youtube } from 'lucide-react'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -43,8 +43,7 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: Instagram, url: 'https://www.instagram.com/santosh_photography_offical?igsh=MTNjaXJqMWFlb2hyOQ%3D%3D&utm_source=qr', label: 'Instagram' },
-    { icon: Facebook, url: '#', label: 'Facebook' },
-    { icon: Youtube, url: '#', label: 'Youtube' },
+    { icon: Youtube, url: 'https://youtube.com/@santosh_photography?si=MhGtwc-tXFbjE7UP', label: 'Youtube' },
   ]
 
   return (
@@ -203,6 +202,10 @@ export default function Contact() {
                     <option value="birthday">Birthday Shoot</option>
                     <option value="half-saree">Half Saree Function</option>
                     <option value="wedding">Wedding</option>
+                    <option value="house-warming">House Warming Ceremony</option>
+                    <option value="celebrities-shoots">Celebrities Shoots</option>
+                    <option value="song-shoots">Song Shoots</option>
+                    <option value="fashion">Fashion</option>
                   </select>
                 </div>
 
