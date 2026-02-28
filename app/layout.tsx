@@ -5,8 +5,31 @@ import CartSidebarContainer from '@/components/CartSidebarContainer'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Santosh Photography',
-  description: 'Capturing moments, creating memories. Professional photography services for all your special occasions.',
+  title: 'Santosh Photography | Best Photographer in Bhimavaram',
+  description: 'Professional photography services in Bhimavaram. Specialized in Weddings, Baby Showers, Cradle Ceremonies, and Fashion Shoots. Capturing your timeless memories with passion.',
+  keywords: ['Photographer in Bhimavaram', 'Wedding Photography', 'Baby Shower Photography', 'Cradle Ceremony', 'Santosh Photography', 'Best Photographer India'],
+  authors: [{ name: 'Santosh Photography' }],
+  viewport: 'width=device-width, initial-scale=1',
+  icons: {
+    icon: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772271906/logo.jpg_duilqh.jpg',
+    apple: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772271906/logo.jpg_duilqh.jpg',
+  },
+  openGraph: {
+    title: 'Santosh Photography | Timeless Memories',
+    description: 'Professional photography services in Bhimavaram. Capturing moments, creating memories.',
+    url: 'https://santoshphotography.in',
+    siteName: 'Santosh Photography',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/deeejohfw/image/upload/v1772271906/logo.jpg_duilqh.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Santosh Photography Logo',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
 }
 
 // Load Inter for body text
