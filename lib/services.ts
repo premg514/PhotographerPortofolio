@@ -115,5 +115,55 @@ export const services: Service[] = [
       "Drone",
       "Audience Camera"
     ]
+  },
+  {
+    slug: "house-warming",
+    title: "House Warming Ceremony",
+    description: "Capture the joy of your new home with professional coverage of traditional rituals and celebratory moments.",
+    events: ["Function", "Interiors Shoot"],
+    mediaTypes: [
+      "Traditional Photos",
+      "Traditional Video",
+      "Candid Photos",
+      "Cinematic Video",
+      "Drone"
+    ]
+  },
+  {
+    slug: "celebrities-shoots",
+    title: "Celebrities Shoots",
+    description: "Exclusive and professional celebrity portfolio shoots with high-end lighting and artistic direction.",
+    events: ["Portfolio Shoot", "On-location Shoot"],
+    mediaTypes: [
+      "Traditional Photos",
+      "Candid Photos",
+      "Cinematic Video",
+      "Drone",
+      "BTS Video"
+    ]
+  },
+  {
+    slug: "song-shoots",
+    title: "Song Shoots",
+    description: "Dynamic and cinematic video coverage for music videos and song sequences with professional equipment.",
+    events: ["Main Shoot", "BTS Shoot"],
+    mediaTypes: [
+      "Traditional Photos",
+      "Cinematic Video",
+      "Drone",
+      "BTS Video"
+    ]
+  },
+  {
+    slug: "fashion",
+    title: "Fashion Shoot",
+    description: "Stunning fashion photography for models, brands, and designers with creative styling and lighting.",
+    events: ["Studio Shoot", "Street Style Shoot", "Full Portfolio"],
+    mediaTypes: [
+      "Traditional Photos",
+      "Candid Photos",
+      "Cinematic Video",
+      "Fashion Film"
+    ]
   }
 ]

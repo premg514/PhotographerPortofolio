@@ -34,19 +34,15 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center group animate-fade-in">
-            <div className={`p-1 rounded-xl transition-all duration-300 ${isScrolled
-              ? 'bg-amber-100/50'
-              : 'bg-white/10 backdrop-blur-sm'
-              }`}>
-              <div className="relative w-12 h-12 overflow-hidden rounded-lg">
-                <Image
-                  src="https://res.cloudinary.com/deeejohfw/image/upload/v1772027200/458465116_1047268646835539_4920439999036437754_n_lkirfv.jpg"
-                  alt="Logo"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+          <Link href="/" className="flex items-center group animate-fade-in transition-all duration-300">
+            <div className="rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+              <Image
+                src="https://res.cloudinary.com/deeejohfw/image/upload/v1772254269/Screenshot_2026-02-28_101840_auxcdi.png"
+                alt="Santosh Photography Logo"
+                width={200}
+                height={50}
+                className="h-8 md:h-10 w-auto object-contain block"
+              />
             </div>
           </Link>
 

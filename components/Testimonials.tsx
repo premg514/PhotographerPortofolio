@@ -5,28 +5,28 @@ import { Star, Quote } from 'lucide-react'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Priya & Rahul',
+      name: 'Venkata Satyanarayana & Lakshmi',
       service: 'Wedding Photography',
       rating: 5,
-      text: 'The team captured our wedding beautifully! Every moment was perfect, from the candid shots to the cinematic videos. We couldn\'t be happier with the results.',
+      text: 'Santosh captured our wedding in Bhimavaram with such grace. The traditional shots and drone footage of our ceremony were breathtaking. Truly professional!',
     },
     {
-      name: 'Ananya Singh',
+      name: 'Rajeswari Garu',
       service: 'Baby Shoot',
       rating: 5,
-      text: 'Amazing experience with our baby\'s first photoshoot! They were so patient and professional. The photos turned out absolutely adorable!',
+      text: 'Wonderful experience during my grandson\'s cradle ceremony. The patience and creativity shown by the team made it a memorable day for our family.',
     },
     {
-      name: 'Vikram & Sneha',
-      service: 'Outdoor Shoot',
+      name: 'Srinivas Rao & Swathi',
+      service: 'House Warming',
       rating: 5,
-      text: 'Our half saree ceremony was captured beautifully. The creativity and attention to detail were outstanding. Highly recommend their services!',
+      text: 'Our new home opening ceremony was perfectly documented. The interior shots emphasize the beauty of our new space. Highly recommended in our region!',
     },
     {
-      name: 'Ravi Kumar',
-      service: 'Birthday Party',
+      name: 'Kalyan Chakravarthy',
+      service: 'Fashion Shoot',
       rating: 5,
-      text: 'They made my daughter\'s birthday so special! The cake smash photos are absolutely precious. Professional and fun to work with.',
+      text: 'Excellent portfolio shoot. The attention to detail and lighting techniques are on par with international standards. Great to have such talent locally.',
     },
   ]
 

@@ -9,6 +9,10 @@ import {
   Star,
   Camera,
   ShoppingCart,
+  Home,
+  User,
+  Music,
+  Scissors,
 } from "lucide-react";
 import { services, Service } from "@/lib/services";
 import { useCart } from "@/context/CartContext";
@@ -22,6 +26,10 @@ const serviceIcons: { [key: string]: any } = {
   birthday: Cake,
   "half-saree": Mountain,
   wedding: Heart,
+  "house-warming": Home,
+  "celebrities-shoots": User,
+  "song-shoots": Music,
+  fashion: Scissors,
 };
 
 // Image mapping for services
@@ -31,6 +39,10 @@ const serviceImages: { [key: string]: string } = {
   birthday: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297721/service_birthday_party_1771296996314_zz8oo1.jpg",
   "half-saree": "https://res.cloudinary.com/deeejohfw/image/upload/v1771299945/Gemini_Generated_Image_h447yah447yah447_e0mqqg.png",
   wedding: "https://res.cloudinary.com/deeejohfw/image/upload/v1771297722/service_wedding_1771297036682_i3ayhy.jpg",
+  "house-warming": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800",
+  "celebrities-shoots": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800",
+  "song-shoots": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=800",
+  fashion: "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800",
 };
 
 export default function Services() {
